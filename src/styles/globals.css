@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap');
+:root {
+    --pink: hsl(338, 70%, 55%);
+    --teal: hsl(138, 70%, 62%);
+    --white: hsl(334, 7%, 95%);
+  }
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer base {
+    html,
+    body {
+      font-family: 'Blinker', sans-serif;
+      box-sizing: border-box;
+      @apply bg-light;
+    }
+    
+    h1 {
+      @apply text-4xl sm:text-5xl md:text-6xl
+    }
+    h2{
+      @apply text-3xl sm:text-4xl
+    }
+    li {
+      @apply cursor-pointer
+    }
+   
+  }
